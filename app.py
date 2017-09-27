@@ -9,12 +9,7 @@ app = Flask(__name__)
 def main():
     return """
     <p>get fragments: GET request to /generate endpoint with difficulty level (easy, medium, hard)</p>
-    <p>     example request: {"level": "medium"}</p>
-    <p>     example response: {"fragments": ["ACA", "GTTG", "CGTA" ...]}</p>
-    <p> </p>
-    <p> </p>
     <p>validate solution: POST request to /validate endpoint with difficulty level (easy, medium, hard)</p>
-    
     """
 
 
