@@ -13,7 +13,7 @@ def main():
     <p>example response: \{"fragments": ["ACA", "GTTG", "CGTA" ...]\}</p>
     <p></p>
     <p></p>
-    <p>ok?</p>
+    <p>ok</p>
     """
 
 
