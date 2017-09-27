@@ -13,7 +13,8 @@ def main():
     <p>example response: \{"fragments": ["ACA", "GTTG", "CGTA" ...]\}</p>
     <p></p>
     <p></p>
-    <p>ok</p>
+    <p>validate solution: POST request to /validate endpoint with difficulty level (easy, medium, hard)</p>
+    
     """
 
 
