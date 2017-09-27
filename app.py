@@ -1,7 +1,4 @@
 from flask import Flask, request, jsonify, make_response
-from github import Github, GithubException
-import os
-
 app = Flask(__name__)
 
 
@@ -15,7 +12,8 @@ def main():
 
 @app.route('/generate', methods=['GET'])
 def generate():
-    return "generate"
+
+    return request.args["level"]
 
 
 if __name__ == '__main__':
