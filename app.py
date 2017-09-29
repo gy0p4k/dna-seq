@@ -12,17 +12,12 @@ def main():
 @app.route('/generate', methods=['POST'])
 def generate():
     try:
-        return "szia"
-        # return generate_fragment(request.form["level"])()
+        return generate_fragment(request.form["level"])()
     except:
         raise
 
 def generate_fragment(level):
-    return {
-        "easy": easy,
-        "medium": medium,
-        "hard": hard
-    }[level]
+    return get_seq(level)
 
 def splitter(seq):
     left_seq = seq
