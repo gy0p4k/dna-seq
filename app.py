@@ -19,7 +19,15 @@ def generate():
 
 
 def generate_fragment(level):
-    return get_json_return(splitter(get_seq(level)))
+    return get_json_return(splitter(get_seq(level), get_level(level)))
+
+def get_level(level):
+    return {
+    "easy": 3,
+    "medium": 4, 
+    "hard": 6,
+    "sample": 2
+    }[level]
 
 
 def get_seq(filename):

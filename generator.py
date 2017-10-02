@@ -10,7 +10,7 @@ def generate(num):
     return dna_seq
 
 
-def splitter(dna_list):
+def splitter(dna_list, num):
     frags = []
     left = list(dna_list)
     right = list(dna_list)
@@ -18,8 +18,8 @@ def splitter(dna_list):
     right_rand = 1
     while left != [] or right != []:
         while left_rand == right_rand:
-            left_rand = random.randint(3, 5)
-            right_rand = random.randint(3, 5)
+            left_rand = random.randint(num, num * 2)
+            right_rand = random.randint(num, num * 2)
         frags = list_rand_element(left_rand, left, frags)
         frags = list_rand_element(right_rand, right, frags)
     return [x for x in frags if x]
